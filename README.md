@@ -19,3 +19,35 @@ According to the description of the original data, provided in the [Readme.txt](
 - **record related features**: This contains information about the number of records for the specific hour and date. This group included the **casual, registered** and **cnt** columns.
 
 > Note: **instant** wasn't included in any of the aforementioned groups. The reason for this is that it is an idex column and will be exluded from the analysis, as it does not contain any information relevant to this analysis.
+
+### Preprocessing Details
+1. `seasons`: each of the four divisions of the year
+    - `1`: Windter
+    - `2`: Spring
+    - `3`: Summer
+    - `4`: Fall.
+
+2. `yr`: year
+    - `0`: 2011
+    - `1`: 2012
+
+3. `weekday`: day of the week
+    - `0`: Sunday
+    - `1`: Monday
+    - `2`: Tuesday
+    - `3`: Wednesday
+    - `4`: Thursday
+    - `5`: Friday
+    - `6`: Saturday
+
+4. `hum`: humidity percentage
+    - `0` - `100`
+
+5. `windspeed`: registered windspeed
+    - `0` - `67`
+
+6. `weathersit`: currnet weather conditions
+    - `1`: clear
+    - `2`: cloudy
+    - `3`: light snow or rain
+    - `4`: heavy snow or rain
