@@ -69,4 +69,11 @@ According to the description of the original data, provided in the [Readme.txt](
 
 - The number of registered rides is always significantly higher than the number of casual rides per day.
 - During the winter, the overal number of rides decreases (as bad weather and low tempreatures have a negative impact on ride sharing services)
+- With the lot of variance in the time series above, it's necessary to smooth out the curves by taking the rolling mean and standard deviation of the two time series and plot those instead.
 
+![](figs/rides_aggregated.png)
+<p align="center"><sub>Rolling mean and standard deviation of rides</sub</p>
+
+
+- This way, visualisation is now possible for the average number of rides for a specific time period (also known as a **window**) but also the expected deviation from the mean.
+- The values of the rolling mean and standard deviation at certain time instance is only computed from the last *window* entries in the time series (in our case, this is 7), and not from the entries of the whole series.
