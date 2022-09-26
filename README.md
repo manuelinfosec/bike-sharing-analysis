@@ -51,3 +51,22 @@ According to the description of the original data, provided in the [Readme.txt](
     - `2`: cloudy
     - `3`: light snow or rain
     - `4`: heavy snow or rain
+
+
+## Univariate Analysis
+### REGISTERED VS. CASUAL USE ANALYSIS
+
+![](figs/rides_distribution.png)
+<p align="center"><sub>Distribution of registered versus casual rides per hour</sub</p>
+
+- Registered users perform way more rides than casual ones.
+- Both distributions are skewed to the right, meaning for most of the entries in the data, zero or a small number of rides were registered.
+- Every entry has quite a large number of rides (that is, higher than 800).
+
+
+![](figs/rides_daily.png)
+<p align="center"><sub>Number of rides daily for registered and casual customers</sub</p>
+
+- The number of registered rides is always significantly higher than the number of casual rides per day.
+- During the winter, the overal number of rides decreases (as bad weather and low tempreatures have a negative impact on ride sharing services)
+
