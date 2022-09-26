@@ -12,3 +12,10 @@ Although the conducted analysis is related to bike sharing, the provided techniq
 ## Dataset
 The original dataset is available at https://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset#.
 
+According to the description of the original data, provided in the [Readme.txt](data/README.txt), the columns can be split into three main groups:
+
+- **temporal features**: This contains information about the time at which the record was registered. This group contains the **dteday, season, yr, mnth, hr, holiday, weekday** and **workingday** columns.
+- **weather related features**: This contains information about the weather conditions. The **weathersit, temp, atemp, hum** and **windspeed** columns are included in this group.
+- **record related features**: This contains information about the number of records for the specific hour and date. This group included the **casual, registered** and **cnt** columns.
+
+> Note: **instant** wasn't included in any of the aforementioned groups. The reason for this is that it is an idex column and will be exluded from the analysis, as it does not contain any information relevant to this analysis.
