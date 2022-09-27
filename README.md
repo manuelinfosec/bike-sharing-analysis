@@ -90,7 +90,14 @@ Weekends:
 It can be claimed that most of the usage of bike sharing services occurs during working days, right before and right after the standard working time (that is, 9 to 5).
 
 ![](figs/season_hour_distributions.png)
-<p align="center"><sub>Distribution of rides on a seasonal level</sub></p>
+<p align="center"><sub>Distribution of rides on a seasonal level (hours of the day)</sub></p>
 
 - Each season has a similar graph shape.
 - There are fewer rides (registered and casual) during the winter. This makes sense, as fewer rides are likely to occur when the weather conditions are poor.
+
+![](figs/season_weekday_distributions.png)
+<p align="center"><sub>Distribution of rides on a seasonal level (days of the week)</sub></p>
+
+- There is a decreasing number of registered rides over the weekend (compared to the rest of the week), while the number of casual rides increases.
+
+This could enforce an initial hypothesis, that is, that registered customers mostly use the bike sharing service for commuting (which could be the reason for the decreasing number of registered rides over the weeekend)
