@@ -88,3 +88,9 @@ Weekends:
 - Both distributions are almost uniformly distributed betwen the time interval of 11 AM to 6 PM.
 
 It can be claimed that most of the usage of bike sharing services occurs during working days, right before and right after the standard working time (that is, 9 to 5).
+
+![](figs/season_hour_distributions.png)
+<p align="center"><sub>Distribution of rides on a seasonal level</sub></p>
+
+- Each season has a similar graph shape.
+- There are fewer rides (registered and casual) during the winter. This makes sense, as fewer rides are likely to occur when the weather conditions are poor.
