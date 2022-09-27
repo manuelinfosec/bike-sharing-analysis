@@ -13,8 +13,7 @@ Although the conducted analysis is related to bike sharing, the provided techniq
 The original dataset is available at https://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset#.
 
 According to the description of the original data, provided in the [Readme.txt](data/README.txt), the columns can be split into three main groups:
-
-- **temporal features**: This contains information about the time at which the record was registered. This group contains the **dteday, season, yr, mnth, hr, holiday, weekday** and **workingday** columns.
+- **tems**:htains information about the time at which the record was registered. This group contains the **dteday, season, yr, mnth, hr, holiday, weekday** and **workingday** columns.
 - **weather related features**: This contains information about the weather conditions. The **weathersit, temp, atemp, hum** and **windspeed** columns are included in this group.
 - **record related features**: This contains information about the number of records for the specific hour and date. This group included the **casual, registered** and **cnt** columns.
 
@@ -75,3 +74,17 @@ According to the description of the original data, provided in the [Readme.txt](
 
 - This way, visualisation is now possible for the average number of rides for a specific time period (also known as a **window**) but also the expected deviation from the mean.
 - The values of the rolling mean and standard deviation at certain time instance is only computed from the last *window* entries in the time series (in our case, this is 7), and not from the entries of the whole series.
+
+![](figs/weekday_hour_distributions.png)
+<p align="center">Distribution of rides on a daily and hourly basis<sub></sub></p>
+
+Working days:
+- The highest number of rides for registered users takes place around 8 AM and 6PM. This is totally expected, as it is likely that most registered users use the bike sharing service for commuting.
+- The casual usage of bike sharing services on working days is quite limited, as the plot shows.
+
+Weekends:
+- The distribution changes for both casual and registered users.
+- The registered rides still outnumber the casual ones.
+- Both distributions are almost uniformly distributed betwen the time interval of 11 AM to 6 PM.
+
+We can claim that most of the usage of bike sharing services occurs during working days, right before and right after the standard working time (that is, 9 to 5).
