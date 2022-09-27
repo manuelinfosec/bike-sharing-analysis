@@ -87,4 +87,4 @@ Weekends:
 - The registered rides still outnumber the casual ones.
 - Both distributions are almost uniformly distributed betwen the time interval of 11 AM to 6 PM.
 
-We can claim that most of the usage of bike sharing services occurs during working days, right before and right after the standard working time (that is, 9 to 5).
+It can be claimed that most of the usage of bike sharing services occurs during working days, right before and right after the standard working time (that is, 9 to 5).
