@@ -17,7 +17,7 @@ According to the description of the original data, provided in the [Readme.txt](
 - **weather related features**: This contains information about the weather conditions. The **weathersit, temp, atemp, hum** and **windspeed** columns are included in this group.
 - **record related features**: This contains information about the number of records for the specific hour and date. This group included the **casual, registered** and **cnt** columns.
 
-> Note: **instant** wasn't included in any of the aforementioned groups. The reason for this is that it is an idex column and will be exluded from the analysis, as it does not contain any information relevant to this analysis.
+> Note: **instant** wasn't included in any of the aforementioned groups. The reason for this is that it is an index column and will be exluded from the analysis, as it does not contain any information relevant to this analysis.
 
 ### Preprocessing Details
 1. `seasons`: each of the four divisions of the year
