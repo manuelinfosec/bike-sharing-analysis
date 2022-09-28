@@ -101,7 +101,7 @@ It can be claimed that most of the usage of bike sharing services occurs during 
 
 - There is a decreasing number of registered rides over the weekend (compared to the rest of the week), while the number of casual rides increases.
 
-This could enforce an initial hypothesis, that is, that registered customers mostly use the bike sharing service for commuting (which could be the reason for the decreasing number of registered rides over the weeekend)
+This could enforce an initial **hypothesis**, that is, that registered customers mostly use the bike sharing service for commuting (which could be the reason for the decreasing number of registered rides over the weeekend)
 
 ## Hypothetical Testing
 This section performs a general conclusion about a population in the dataset based on analysis and measurements performed on a sample. In essence, it tries to address the question, *"Is a certain hypothetical value in line with the value obtained by direct measurements or not?"*
