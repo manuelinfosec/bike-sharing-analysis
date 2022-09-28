@@ -13,7 +13,7 @@ Although the conducted analysis is related to bike sharing, the provided techniq
 The original dataset is available at https://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset#.
 
 According to the description of the original data, provided in the [Readme.txt](data/README.txt), the columns can be split into three main groups:
-- **tems**:htains information about the time at which the record was registered. This group contains the **dteday, season, yr, mnth, hr, holiday, weekday** and **workingday** columns.
+- **temporal features**: This contains information about the time at which the record was registered. This group contains the **dteday, season, yr, mnth, hr, holiday, weekday** and **workingday** columns.
 - **weather related features**: This contains information about the weather conditions. The **weathersit, temp, atemp, hum** and **windspeed** columns are included in this group.
 - **record related features**: This contains information about the number of records for the specific hour and date. This group included the **casual, registered** and **cnt** columns.
 
@@ -104,7 +104,4 @@ It can be claimed that most of the usage of bike sharing services occurs during 
 This could enforce an initial hypothesis, that is, that registered customers mostly use the bike sharing service for commuting (which could be the reason for the decreasing number of registered rides over the weeekend)
 
 ## Hypothetical Testing
-This section performs a general conclusion about a population in the dataset based on alaysis and measurements performed on a sample. In essence, it tries to address the question, *"Is a certain hypothetical value in line with the value obtained by direct measurements or not?"*
-
- The general idea behing this statistical test can be summarized in the following steps:
-- **Definition of null nad alternative hypotheses:** In this first step, a null hypothesies denoted 
+This section performs a general conclusion about a population in the dataset based on analysis and measurements performed on a sample. In essence, it tries to address the question, *"Is a certain hypothetical value in line with the value obtained by direct measurements or not?"*
