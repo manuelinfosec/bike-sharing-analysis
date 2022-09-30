@@ -119,4 +119,17 @@ This section performs a general conclusion about a population in the dataset bas
 
 2. After null and alternative hypothesis is established, collect data for the two groups. 
 
+3. Perform the two-sample t-tests.
+
 With a standard critical value of 0.05 (5% significant level), the p-value from the test returns 0.000 which is far below the critical value. As conclusion, the null hyptothesis can be rejected and initial observation (there is a statistically significan difference between the number of rides performed during the working days and weekends) is correct.
+
+4. Plot the distribution of two samples:
+
+![](figs/registered_rides_distribution.png)
+<p align="center"><sub>Registered Rides Distribution: workdays vs weekends</sub></p>
+
+5. Perform the same type of hypothesis testing to validate the second assumption from the last section -- that is, casual users perform more rides during the weekend. 
+    
+    > Is the average number of rides during the working days the sasame as the average number of rides during the weekend, for casual users?
+
+    Therefore, the alternative hypothesis will then result in a statistically significant difference in the average number of rides between the two groups.
