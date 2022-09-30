@@ -118,3 +118,5 @@ This section performs a general conclusion about a population in the dataset bas
     $ H_a $: average registered rides over the weekday - average registered rides over weekends $\neq$ 0.
 
 2. After null and alternative hypothesis is established, collect data for the two groups. 
+
+With a standard critical value of 0.05 (5% significant level), the p-value from the test returns 0.000 which is far below the critical value. As conclusion, the null hyptothesis can be rejected and initial observation (there is a statistically significan difference between the number of rides performed during the working days and weekends) is correct.
