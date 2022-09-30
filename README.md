@@ -105,3 +105,16 @@ This could enforce an initial **hypothesis**, that is, that registered customers
 
 ## Hypothetical Testing
 This section performs a general conclusion about a population in the dataset based on analysis and measurements performed on a sample. In essence, it tries to address the question, *"Is a certain hypothetical value in line with the value obtained by direct measurements or not?"*
+
+### HYPTOTHESIS TESTING ON REGISTERED RIDES
+1. Formulate the null hyptotheis. 
+  
+    > Is there a significant difference between registered rides during working days and the weekend?
+
+    Therefore, the null hypothesis is that the average number of rides for registered uses during the working days is same as the average number of rides during the weekdend. In other words:
+
+    $ H_0 $: average registered rides over the weekday - average registered rides over weekends = 0.
+
+    $ H_a $: average registered rides over the weekday - average registered rides over weekends $\neq$ 0.
+
+2. After null and alternative hypothesis is established, collect data for the two groups. 
