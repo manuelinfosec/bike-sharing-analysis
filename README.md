@@ -133,3 +133,32 @@ With a standard critical value of 0.05 (5% significant level), the p-value from 
     > Is the average number of rides during the working days the sasame as the average number of rides during the weekend, for casual users?
 
     Therefore, the alternative hypothesis will then result in a statistically significant difference in the average number of rides between the two groups.
+
+After running tests, the p-value returned 0, which is strong evidence against the null hypothesis. Hence, casual customers also behave differently over the weekend (in this case, they bike sharing service more) as seen in the plot.
+
+![](figs/casual_rides_distribution.png)
+<p align="center"><sub>Casual Rides Distribution: workdays vs weekends</sub></p>
+
+## Correlation Testing
+### ANALYSIS OF WEATHER-RELATED FEATURES
+
+In this section, I'll focus on analysis of the group of features representing the weather conditions. My expectation is to observe a strong dependency of those features on the current number of rides, as bad weather can significantly influence bike sharing services. 
+
+As most of the weather features seem to be continously distributed, the first and most common way to measure the relationship between two different continous variable is to measure their correlation.
+
+Correlation is a statistic that measures the degree to which two variables move in relation to each other. It provides a numerical measure between -1 and 1.
+
+![](figs/correlation_temp.png)
+<p align="center"><sub>Correlation between rides and temp</sub></p>
+
+
+![](figs/correlation_atemp.png)
+<p align="center"><sub>Correlation between rides and atemp</sub></p>
+
+Plotting **hum** and **windspeed** seperately:
+
+![](figs/correlation_hum.png)
+<p align="center"><sub>Correlation between rides and hum</sub></p>
+
+![](figs/correlation_windspeed.png)
+<p align="center"><sub>Correlation between rides and windspeed</sub></p>
