@@ -166,3 +166,6 @@ Plotting **hum** and **windspeed** seperately:
 It is observable that higher tempreatures have a positive impact on the number of rides. Note  that as the values in the **registered** colum are widely spread with respect to the different values in **temp**, there is a lower correlation compared to the **casual** column. The same pattern is observed in the **hum** visuals where the humidity level has a negative correlation with both types of rides.
 
 This means that with a high level of humidity (mist or rain), customers will tend not to use the bike sharing service. Lastly, there is a minimal correlation between the number of rides and the weind speed (weak positive correlation).
+
+![](figs/correlation_matrix.png)
+<p align="center"><sub>Correlation matrix between continous weather features and rides</sub></p>
