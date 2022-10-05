@@ -169,3 +169,9 @@ This means that with a high level of humidity (mist or rain), customers will ten
 
 ![](figs/correlation_matrix.png)
 <p align="center"><sub>Correlation matrix between continous weather features and rides</sub></p>
+
+## Time Series Analysis
+### Stationarity
+When studying time series, an important concept is the notion of stationarity. A time series is said to be *strongly stationary* if all aspects of its behavior do not change in time. It is possible to have a time a time series that is *weakly stationary*, that is, its mean, standaard deviation, and covariance are stationary with respect to time.
+
+The **Augumented Dickey-Fuller stationarity test** can be used to indentify stationarity in a time series. This is a statistical test in which the null hypothesis is that the time series is nonstationary. Hence when performing the test, a small p-value would be strong evidence against the time series being non-stationary.
