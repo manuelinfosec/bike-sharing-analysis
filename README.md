@@ -174,4 +174,12 @@ This means that with a high level of humidity (mist or rain), customers will ten
 ### Stationarity
 When studying time series, an important concept is the notion of stationarity. A time series is said to be *strongly stationary* if all aspects of its behavior do not change in time. It is possible to have a time a time series that is *weakly stationary*, that is, its mean, standaard deviation, and covariance are stationary with respect to time.
 
-The **Augumented Dickey-Fuller stationarity test** can be used to indentify stationarity in a time series. This is a statistical test in which the null hypothesis is that the time series is nonstationary. Hence when performing the test, a small p-value would be strong evidence against the time series being non-stationary.
+The **Augumented Dickey-Fuller stationarity test** can be used to identify stationarity in a time series. This is a statistical test in which the null hypothesis is that the time series is nonstationary. Hence when performing the test, a small p-value would be strong evidence against the time series being non-stationary.
+
+![](figs/stationarity_test_registered.png)
+<p align="center"><sub>Stationarity test results for aggregated daily registered rides</sub></p>
+
+![](figs/stationarity_test_casual.png)
+<p align="center"><sub>Stationarity test results for aggregated daily casual rides</sub></p>
+
+From the performed tests, it is obvious that neither the moving average nor standard deviations are stationary. Furthermore, the Dickey-Fuller test returns values of 0.355 and 0.372 for **registered** and **casual** users, respectively. This is strong evidence that the time series is not stationary, and we need to process them in order to obtain a stationary one.
