@@ -198,3 +198,29 @@ Both techniques (rolling mean and last value shifting) returned a time sereies, 
 This effect is also commmon in certain fields (finance, for instance) and is also known as **volatility clustering**.
 
 *A possible interpretation, relative to the data, is that the number of casual rides increses during the summer periods and drops during the winter.*
+
+
+#### Time Series Decomposition
+
+Another technique for detrending time series is a previously mentioned technique, **time series decomposition**. This involves breaking the time series into seperate components.
+
+- *Trend component*: This component represents a long-term progression of the series. A trend component is present when there is a persistent increase or decrease in the series.
+
+- *Seasonal component*: This component represents seasonality patterns in the data. A seasonal component persists when the data is influenced by certain seasonal factors  (for exxample, monthly, quarterly or yearly factors).
+
+- *Residual component*: This componnet represents an irregular or noisy component. This component describes random fluctuation in the data, which are not captured by the other components. In general, this is the residual of the time series, that is, once the other components have bee removed.
+
+The decomposition is *additive* if the following holds:
+
+$ Y_t = T_t + S_t + R_t $
+
+The decomposition is *multiplicative* if,
+
+$ Y_t = T_t \cdot S_t \cdot R_t $
+
+![](figs/registered_decomposition.png)
+<p align="center"><sub>Decomposition for registered rides</sub></p>
+
+![](figs/casual_decomposition.png)
+<p align="center"><sub>Decomposition for casual rides</sub></p>
+
