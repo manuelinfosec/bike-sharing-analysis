@@ -224,3 +224,12 @@ $ Y_t = T_t \cdot S_t \cdot R_t $
 ![](figs/casual_decomposition.png)
 <p align="center"><sub>Decomposition for casual rides</sub></p>
 
+Testing residual for stationarity:
+
+![](figs/registered_resid.png)
+<p align="center"><sub>Testing residuals for stationarity for registered rides</sub></p>
+
+![](figs/casual_resid.png)
+<p align="center"><sub>Testing residuals for stationarity for casual rides</sub></p>
+
+As you can see, the residuals satisfy our stationarity test.
