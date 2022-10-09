@@ -212,11 +212,13 @@ Another technique for detrending time series is a previously mentioned technique
 
 The decomposition is *additive* if the following holds:
 
-$ Y_t = T_t + S_t + R_t $
+<img src="https://latex.codecogs.com/gif.latex?Y_t = T_t + S_t + R_t " /> 
+
 
 The decomposition is *multiplicative* if,
 
-$ Y_t = T_t \cdot S_t \cdot R_t $
+<img src="https://latex.codecogs.com/gif.latex?Y_t = T_t \cdot S_t \cdot R_t " /> 
+
 
 ![](figs/registered_decomposition.png)
 <p align="center"><sub>Decomposition for registered rides</sub></p>
