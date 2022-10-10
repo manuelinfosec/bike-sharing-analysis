@@ -21,7 +21,7 @@ According to the description of the original data, provided in the [Readme.txt](
 
 ### Preprocessing Details
 1. `seasons`: each of the four divisions of the year
-    - `1`: Windter
+    - `1`: Winter
     - `2`: Spring
     - `3`: Summer
     - `4`: Fall.
@@ -183,3 +183,18 @@ The **Augumented Dickey-Fuller stationarity test** can be used to identify stati
 <p align="center"><sub>Stationarity test results for aggregated daily casual rides</sub></p>
 
 From the performed tests, it is obvious that neither the moving average nor standard deviations are stationary. Furthermore, the Dickey-Fuller test returns values of 0.355 and 0.372 for **registered** and **casual** users, respectively. This is strong evidence that the time series is not stationary, and we need to process them in order to obtain a stationary one.
+
+### Detrending a Time Series
+A common way to detrend a time series and make it stationary is to subtract either its rolling mean or its last value, or to decompose it into a component that will contain its trend, seasonality, and resudial components.
+
+![](figs/daily_registered_diff.png)
+<p align="center"><sub>Stationarity test results for aggregated daily registered rides (after detrend) </sub></p>
+
+![](figs/daily_casual_diff.png)
+<p align="center"><sub>Stationarity test results for aggregated daily casual rides (after detrend) </sub></p>
+
+Both techniques (rolling mean and last value shifting) returned a time sereies, which is stationary, according to the Dickey-Fuller test (0.00). Note that an interesting pattern occurs in the casual series: a rolling standard deviation exhibits a clustering effect, that is, periods in which the standard deviation is higher and periods which it is lower.
+
+This effect is also commmon in certain fields (finance, for instance) and is also known as **volatility clustering**.
+
+*A possible interpretation, relative to the data, is that the number of casual rides increses during the summer periods and drops during the winter.*
