@@ -233,3 +233,20 @@ Testing residual for stationarity:
 <p align="center"><sub>Testing residuals for stationarity for casual rides</sub></p>
 
 The residuals still satisfy the stationarity tests.
+
+### Modelling Time Series
+
+A common approach to modelling a time series is to assume that past ovservations somehow influence future ones. For instnace, customers who are satisfied by using the bike sharing service will more likely recommend it, producing, in this way, a positive impact on the service and a higher number of customers (any negative feedback has the opposite effect, reducing the number of customers). 
+
+Hence, increasing the number of customers and the quality of the service increases the number of recommendations and, therefore, then number of new customers. In this way, a positive feedback loop is created, in which the current number of rides correlates with its past values.
+
+#### ARIMA MODELS
+**Autoregressive Integrated Moving Average (ARIMA)** models are a class of statistical models that try to explain the behaviour of a time series using its own past values. 
+
+Being a class of models, ARIMA models are defined by a set of parameters **(p,d,q)** each one corresponsding to a different component of the ARIMA model.
+
+<...snip...>
+
+In practice, the ACF measures the complete correlation between the current entry, **{ $Y_t$ }** and its past entries, lagged by **k**. Note that when computing the ACF(k), the correlation between **$Y_t$** with all intermediate values (**$Y_{t-1},...,Y_{t-k}$)**, the PACF is often referred to, which only measures the impact of **$Y_{t-k}$** on $Y_t$
+
+ACF and PACF are, in general, used to determin the order of integration when modelling a time series with an ARIMA model. For each lag, the correlation coefficient and level of significance are computed. In general, we aim at an integrated series, in which only the first few lags have correlation greater than the level of significance.
