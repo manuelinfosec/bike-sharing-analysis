@@ -232,4 +232,4 @@ Testing residual for stationarity:
 ![](figs/casual_resid.png)
 <p align="center"><sub>Testing residuals for stationarity for casual rides</sub></p>
 
-As you can see, the residuals satisfy our stationarity test.
+The residuals still satisfy the stationarity tests.
